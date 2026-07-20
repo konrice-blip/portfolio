@@ -68,7 +68,7 @@ body {
     color: #EFEFFF;
     font-family: "Jersey 10";
     font-weight: 400;
-    font-size: 60px; /* Scaled down from 70px */
+    font-size: 55px; /* Scaled down from 70px */
     margin: 0;
     line-height: 0.8;
 }
@@ -98,7 +98,7 @@ nav ul li a,
 nav ul li a:visited, 
 nav ul li a:active {
     color: #EFEFFF;
-    font-size: 135px; /* Scaled down from 40px */
+    font-size: 30px; /* Scaled down from 40px */
     font-family: "Jersey 10";
     font-weight: 400;
     text-decoration: none;
@@ -372,7 +372,6 @@ nav ul li a:hover {
     }
 }
 
-/** TECH/TOOLS **/
 .tech img {
     width: 48px;
     height: 48px;
@@ -395,13 +394,15 @@ nav ul li a:hover {
     margin: 80px auto 100px;
 }
 
+/** PERSONAL PROJECTS **/
+
 .bg-projects {
     border-radius: 20px;
     background: #D9D9D9;
     width: 1273px;
     height: 1060px;
     margin: 0 auto;
-    overflow: hidden; /* Ensures content stays strictly bounded inside the box */
+    overflow: hidden; 
 }
 
 .tabs {
@@ -464,7 +465,6 @@ nav ul li a:hover {
     margin: 0;               
 }
 
-/** PERSONAL PROJECTS CONTAINER **/
 .personal-projects {
     background: linear-gradient(180deg, #A297DF 1.18%, #786CB7 25.59%, #4D428F 50%, #6357A3 62.21%, #786CB7 74.41%, #A297DF 98.82%);
     width: 1440px;
@@ -473,9 +473,23 @@ nav ul li a:hover {
     box-sizing: border-box;
 }
 
-/* Base styling for handling the active page container grid */
 .tabs-content {
-    display: none; /* Hidden by default */
+    display: none;      /* Kept to ensure non-active tabs are fully ignored by the layout */
+    opacity: 0;         /* Starts completely invisible */
+    transition: opacity 0.4s ease-in-out; /* Animates the opacity over 0.4 seconds */
+}
+
+.tabs-content--active {
+    display: grid;
+    grid-template-columns: 463px 1fr; 
+    gap: 40px;
+    padding: 40px 60px;
+    box-sizing: border-box;
+    height: calc(1038px - 112px); 
+}
+
+.tabs-content--fade-in {
+    opacity: 1;
 }
 
 .tabs-content--active {
@@ -543,18 +557,18 @@ nav ul li a:hover {
 }
 
 .demo-link-container {
-    text-align: center;       /* 🛠️ Centers the link button horizontally */
-    margin: 40px auto 0;      /* Adds clean vertical breathing room below text */
+    text-align: center;       
+    margin: 40px auto 0;      
     width: 100%;
 }
 
 .project-link-btn {
     display: inline-block;
-    padding: 25px 45px;       /* 🛠️ Made padding larger for a bigger button footprint */
+    padding: 25px 45px;       
     background: #639;
-    color: #FFF !important;   /* 🛠️ Forces the link text color to stay pure white */
+    color: #FFF !important;  
     font-family: "Jersey 25";
-    font-size: 38px;          /* 🛠️ Jumped the font size up for visibility */
+    font-size: 38px;          
     text-decoration: none;
     border-radius: 15px;
     letter-spacing: 1px;
@@ -564,7 +578,7 @@ nav ul li a:hover {
 
 .project-link-btn:hover {
     background: #7062bd;
-    transform: scale(1.03);   /* Adds a subtle pop effect when hovered */
+    transform: scale(1.03);   
 }
 
 /* Tab Button Interaction States */
