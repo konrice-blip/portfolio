@@ -98,7 +98,7 @@ nav ul li a,
 nav ul li a:visited, 
 nav ul li a:active {
     color: #EFEFFF;
-    font-size: 35px; /* Scaled down from 40px */
+    font-size: 135px; /* Scaled down from 40px */
     font-family: "Jersey 10";
     font-weight: 400;
     text-decoration: none;
