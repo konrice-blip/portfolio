@@ -77,7 +77,7 @@ body {
     color: #EFEFFF;
     font-family: "Jersey 10";
     font-weight: 400;
-    font-size: 44px; /* Scaled down from 40px */
+    font-size: 40px; /* Scaled down from 40px */
     margin: 0;
     line-height: 0.8;
 }
@@ -92,14 +92,13 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    font-size: 35px;
 }
 
 nav ul li a, 
 nav ul li a:visited, 
 nav ul li a:active {
     color: #EFEFFF;
-    font-size: 24px; /* Scaled down from 40px */
+    font-size: 35px; /* Scaled down from 40px */
     font-family: "Jersey 10";
     font-weight: 400;
     text-decoration: none;
