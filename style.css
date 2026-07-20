@@ -14,27 +14,26 @@ a, a:visited, a:hover, a:active {
 html, body {
     width: 100%;
     min-height: 100vh;
-    overflow-x: hidden; /* Stops horizontal shift completely */
+    overflow-x: hidden; 
 }
 
 body {
     background-color: #EDDBFF;
     display: flex;
-    flex-direction: column; /* Stacks header, content, and footer down a clean vertical line */
+    flex-direction: column; 
 }
 
 .canvas {
     position: relative;
     width: 1440px;
-    /* 🛠️ FIX 1: Changed from height: 1075px to min-height and auto */
     min-height: 100vh; 
-    height: auto;        /* Allows the container to scale downward natively */
+    height: auto;        
     margin: 0 auto;      
     transform-origin: top center;
-    flex-grow: 1;        /* Automatically pushes the footer to the true bottom */
+    flex-grow: 1;        
 }
 
-/** BANNER **/
+/** BANNER HEAD**/
 .banner {
     width: 100vw;
     height: 160px; 
@@ -68,7 +67,7 @@ body {
     color: #EFEFFF;
     font-family: "Jersey 10";
     font-weight: 400;
-    font-size: 55px; /* Scaled down from 70px */
+    font-size: 55px; 
     margin: 0;
     line-height: 0.8;
 }
@@ -77,7 +76,7 @@ body {
     color: #EFEFFF;
     font-family: "Jersey 10";
     font-weight: 400;
-    font-size: 40px; /* Scaled down from 40px */
+    font-size: 40px; 
     margin: 0;
     line-height: 0.8;
 }
@@ -98,7 +97,7 @@ nav ul li a,
 nav ul li a:visited, 
 nav ul li a:active {
     color: #EFEFFF;
-    font-size: 30px; /* Scaled down from 40px */
+    font-size: 30px; 
     font-family: "Jersey 10";
     font-weight: 400;
     text-decoration: none;
@@ -111,7 +110,7 @@ nav ul li a:hover {
     transform: scale(1.1);     
 }
 
-/** INTRODUCTION **/
+/** INTRODUCTION/ABOUT ME **/
 
 .description p:not(.contacts-intro, .traits) {
     font-family: "Jersey 10";
@@ -131,7 +130,7 @@ nav ul li a:hover {
 
 .description .greeting-row p:nth-child(2) {
     color: #E354F9;
-    font-size: 65px; /* Scaled down from 100px */
+    font-size: 65px; 
     display: inline-block; 
     vertical-align: middle;
     margin-left: 20px;
@@ -140,7 +139,7 @@ nav ul li a:hover {
 }
 
 .description .greeting-row img:first-of-type {
-    width: 90px; /* Proportionally resized */
+    width: 90px;
     height: 95px; 
     display: inline-block; 
     vertical-align: middle;
@@ -157,10 +156,10 @@ nav ul li a:hover {
     justify-content: center;
     color: #534477;
     font-family: "Jersey 25";
-    font-size: 32px; /* Scaled down from 55px */
+    font-size: 32px; 
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* Reduced from 85px to prevent massive vertical height stretching */
+    line-height: 50px; 
     letter-spacing: 1.1px;
     margin-left: 100px;
     margin-top: 10px;
@@ -169,7 +168,7 @@ nav ul li a:hover {
 .traits span:nth-child(2), .traits span:last-child {
     color: #6A5CBD;
     font-family: "Jersey 25";
-    font-size: 45px; /* Scaled down from 75px */
+    font-size: 45px;
     font-style: normal;
     font-weight: 400;
     line-height: 50px;
@@ -234,7 +233,7 @@ nav ul li a:hover {
     height: 46px;
 }
 
-/** PROFILE PIC **/
+/** PROFILE PIC ---> RIGHT SIDE**/
 
 .blur-bg {
     position: absolute;   
@@ -469,14 +468,14 @@ nav ul li a:hover {
     background: linear-gradient(180deg, #A297DF 1.18%, #786CB7 25.59%, #4D428F 50%, #6357A3 62.21%, #786CB7 74.41%, #A297DF 98.82%);
     width: 1440px;
     height: 1370px;
-    padding-top: 50px; /* Optional spacing to center the inner display pane */
+    padding-top: 50px; 
     box-sizing: border-box;
 }
 
 .tabs-content {
-    display: none;      /* Kept to ensure non-active tabs are fully ignored by the layout */
-    opacity: 0;         /* Starts completely invisible */
-    transition: opacity 0.4s ease-in-out; /* Animates the opacity over 0.4 seconds */
+    display: none;      
+    opacity: 0;        
+    transition: opacity 0.4s ease-in-out; 
 }
 
 .tabs-content--active {
@@ -494,14 +493,14 @@ nav ul li a:hover {
 
 .tabs-content--active {
     display: grid;
-    grid-template-columns: 463px 1fr; /* Set column boundaries */
+    grid-template-columns: 463px 1fr; 
     gap: 40px;
     padding: 40px 60px;
     box-sizing: border-box;
     height: calc(1038px - 112px); /* Subtracts top bar menu height */
 }
 
-/* Left Column Styling */
+/* PREVIEW IMG & LANGUAGES USED */
 .tab-left-column {
     display: flex;
     flex-direction: column;
@@ -529,13 +528,13 @@ nav ul li a:hover {
     gap: 12px;
 }
 
-/* Right Column Styling */
+/* DESCRIPTION OF PROJECTS */
 .tab-right-column {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Spreads description text to top and live link container to bottom */
+    justify-content: space-between; 
     height: 100%;
-    padding-bottom: 40px; /* Adjust spacing dynamically */
+    padding-bottom: 40px; 
     box-sizing: border-box;
 }
 
@@ -581,7 +580,7 @@ nav ul li a:hover {
     transform: scale(1.03);   
 }
 
-/* Tab Button Interaction States */
+/* TAB BUTTON DESIGN */
 .tabs-button {
     color: #373232;
     font-family: "Jersey 25";
@@ -634,7 +633,7 @@ nav ul li a:hover {
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px; /* 162.162% */
+    line-height: 40px; 
     letter-spacing: 1px;
     max-width: 601px;
     margin-top: 20px;
@@ -653,20 +652,17 @@ nav ul li a:hover {
     font-weight: 400;
     line-height: 85px; 
     letter-spacing: 2.8px;
-    text-decoration: underline; /* Shorthand for all your underline configurations */
-    
-    /* 🛠️ FIXES FOR ALIGNMENT & BOX OVERFLOW */
-    text-align: center;         /* Centers the text horizontally */
-    max-width: 841px;           /* Replaces rigid width with max-width */
-    margin: 40px auto 40px;     /* Centers the entire heading block and leaves breathing room below it */
+    text-decoration: underline; 
+    text-align: center;         
+    max-width: 841px;           
+    margin: 40px auto 40px;     
 }
 
-
+/** FOOTER **/
 footer {
     width: 100%; 
     background-color: #9B7EDD;
-    padding: 4.5rem 0; /* 🚀 OPTIMIZED SPACING: Increased padding significantly for a cleaner look */
-    
+    padding: 4.5rem 0; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -676,9 +672,9 @@ footer {
 
 footer p {
     font-family: "Jersey 10";
-    font-size: 42px;    /* 🚀 ENLARGED: Bumped up from 30px for better visibility */
+    font-size: 42px;    
     color: #EFEFFF;
-    margin-bottom: 2.5rem; /* 🚀 OPTIMIZED SPACING: More room between title and icons */
+    margin-bottom: 2.5rem; 
     letter-spacing: 1.5px;
 }
 
@@ -686,23 +682,20 @@ footer .social-icons {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;          /* Clean fallback layout item pacing */
+    gap: 10px;         
 }
 
 footer .social-icons a {
     color: #EFEFFF; 
-    font-size: 3.5rem;  /* 🚀 ENLARGED: Made icons much bigger from 2rem */          
-    margin: 0 25px;     /* 🚀 OPTIMIZED SPACING: Spaced out links horizontally */          
+    font-size: 3.5rem;           
+    margin: 0 25px;             
     display: inline-block;
-    /* 🚀 ANIMATION TRANSITION: Sets up smooth timing for color, lift, and bounce profiles */
     transition: color 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
                 transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* Fun hover effect */
 footer .social-icons a:hover {
-    color: #EE98C1;     /* 🎨 Accent hover color matching your theme row profiles */
-    /* 🚀 HOVER ANIMATION: Lifts icon upwards and magnifies scale dynamically */
+    color: #EE98C1;     
     transform: translateY(-8px) scale(1.15); 
 }
 
