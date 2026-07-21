@@ -2,7 +2,7 @@
 
 Hi there! This is the repository for my personal portfolio website. I built it to show what I've been working on, my design ideas, and the projects I am building as I learn.
 
-👉 **[PORTFOLIO LIVE DEMO](https://konrice-blip.github.io/portfolio/)**
+👉 **[LIVE DEMO](https://konrice-blip.github.io/portfolio/)**
 
 ---
 
